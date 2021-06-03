@@ -53,3 +53,15 @@ h3,
 	height: auto;
 	border-radius: 50%;
 }
+
+/* NAVBAR */
+nav {
+	background-color: rgb(77, 76, 114);
+	display: flex;
+	justify-content: space-between;
+	padding: 1em 10%;
+}
+.nav-icons {
+	width: 55%;
+	height: auto;
+}
