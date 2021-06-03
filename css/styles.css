@@ -1,0 +1,55 @@
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+/* HEADER */
+header {
+	display: flex;
+	background-color: rgb(116, 119, 191);
+	padding: 1em 0%;
+}
+
+h1 {
+	font-size: 20px;
+	margin-right: 1em;
+	margin-left: 0.5em;
+}
+
+h3 {
+	font-size: 15px;
+}
+
+h1,
+h3 {
+	font-weight: normal;
+	color: white;
+}
+sup {
+	font-size: 10px;
+}
+
+h1,
+h3,
+#bellIcon,
+#profileAvatar {
+	margin: auto;
+}
+
+.line {
+	background-color: white;
+	width: 0.3px;
+	opacity: 0.2;
+}
+#bellIcon {
+	width: 6%;
+	height: 10%;
+}
+
+#profileAvatar {
+	width: 12%;
+	height: auto;
+	border-radius: 50%;
+}
