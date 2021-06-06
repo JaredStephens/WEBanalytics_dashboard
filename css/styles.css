@@ -76,6 +76,33 @@ a {
 	justify-content: center;
 }
 
+/* MAIN STYLES */
+
+/* ALERT BUTTON  */
+#alert {
+	display: flex;
+	justify-content: space-between;
+	margin: 1em 1em;
+	padding: 1em;
+	background-color: rgb(116, 119, 191);
+	border-radius: 5px;
+}
+h4 {
+	font-size: 20px;
+	font-weight: lighter;
+	color: white;
+}
+button {
+	background-color: rgb(116, 119, 191);
+	border: none;
+	cursor: pointer;
+}
+#x {
+	background-color: rgb(116, 119, 191);
+	font-size: 15px;
+	color: white;
+}
+
 /* MOBILE RESPONSIVE */
 @media (min-width: 768px) {
 	.grid-container {
