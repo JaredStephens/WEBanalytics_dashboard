@@ -83,6 +83,18 @@ a {
 }
 
 /* MAIN STYLES */
+.dash {
+	background-color: #e5e5e5;
+}
+h2 {
+	font-weight: normal;
+	background: white;
+	font-size: 20px;
+	width: 17%;
+	padding: 0.5em;
+	padding-right: 0%;
+	border-right: 1px solid grey;
+}
 
 /* ALERT BUTTON  */
 #alert {
