@@ -41,10 +41,11 @@ h3 {
 
 .line {
 	background-color: white;
-	width: 0.3px;
+	width: 1px;
 	opacity: 0.2;
-	margin: 0% 15px;
+	margin: 0% 6px;
 }
+
 #bellIcon {
 	width: 25px;
 	height: 10%;
@@ -62,6 +63,7 @@ h3 {
 /* NOTIFICATION STYLES */
 
 .notification {
+	text-decoration: none;
 	display: inline-block;
 }
 
@@ -89,7 +91,7 @@ nav {
 }
 
 .nav-icons {
-	width: 40px;
+	width: 35px;
 	height: auto;
 }
 
@@ -106,10 +108,12 @@ h2 {
 	font-weight: normal;
 	background: white;
 	font-size: 20px;
-	width: 17%;
+	width: 40%;
 	padding: 0.5em;
 	padding-right: 0%;
 	border-right: 1px solid grey;
+	display: flex;
+	justify-content: center;
 }
 
 /* ALERT BUTTON  */
@@ -122,7 +126,7 @@ h2 {
 	border-radius: 5px;
 }
 h4 {
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: lighter;
 	color: white;
 }
@@ -173,6 +177,7 @@ h4 {
 		margin-left: 0%;
 		margin-right: 0%;
 	}
+
 	h3 {
 		font-size: 15px;
 		margin-left: 1%;
@@ -194,6 +199,7 @@ h4 {
 	#profileAvatar {
 		width: 40px;
 	}
+
 	/* NAVBAR 768PX DISPLAY */
 	/* NAVBAR */
 	nav {
@@ -212,9 +218,8 @@ h4 {
 		padding-bottom: 55%;
 	}
 
-	a {
-		display: flex;
-		justify-content: center;
+	h2 {
+		width: 20%;
 	}
 }
 
@@ -233,6 +238,10 @@ h4 {
 		font-size: 15px;
 		margin-left: 1em;
 		margin-right: 0.5em;
+	}
+
+	h2 {
+		width: 15%;
 	}
 
 	.line {
