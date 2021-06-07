@@ -52,11 +52,6 @@ h3 {
 	-web-kit-transition: all 0.1s;
 }
 
-#bellIcon:hover {
-	transform: scale(1.3);
-	transition: all 0.2s ease-in-out;
-}
-
 #profileAvatar {
 	width: 45px;
 	height: auto;
@@ -64,7 +59,28 @@ h3 {
 	margin-left: 0%;
 }
 
+/* NOTIFICATION STYLES */
+
+.notification {
+	display: inline-block;
+}
+
+#bellIcon:hover {
+	transform: scale(1.1);
+	transition: all 0.2s ease-in-out;
+}
+
+.notification .badge {
+	position: absolute;
+}
+
+.badge {
+	color: rgb(129, 201, 143);
+	font-size: 0.4em;
+}
+
 /* NAVBAR */
+
 nav {
 	background-color: rgb(77, 76, 114);
 	display: flex;
