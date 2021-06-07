@@ -8,8 +8,10 @@
 /* HEADER */
 header {
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: rgb(116, 119, 191);
-	padding: 1em 0%;
+	padding: 0.5em 0%;
 }
 
 h1 {
@@ -42,20 +44,19 @@ h3 {
 .line {
 	background-color: white;
 	width: 1px;
-	opacity: 0.2;
-	margin: 0% 6px;
+	opacity: 0.3;
+	margin: 0% 10px;
+	height: 4vh;
 }
 
 #bellIcon {
 	width: 25px;
-	height: 10%;
 	margin-right: 0%;
 	-web-kit-transition: all 0.1s;
 }
 
 #profileAvatar {
 	width: 45px;
-	height: auto;
 	border-radius: 50%;
 	margin-left: 0%;
 }
@@ -65,6 +66,7 @@ h3 {
 .notification {
 	text-decoration: none;
 	display: inline-block;
+	padding: 5% 0%;
 }
 
 #bellIcon:hover {
@@ -98,6 +100,7 @@ nav {
 a {
 	display: flex;
 	justify-content: center;
+	text-decoration: none;
 }
 
 /* MAIN STYLES */
@@ -189,7 +192,7 @@ h4 {
 		width: 0.5px;
 		opacity: 0.5;
 		margin: 0% 1em;
-		height: 5vh;
+		height: 4vh;
 	}
 	#bellIcon {
 		width: 25px;
