@@ -82,16 +82,16 @@ var barChart = new Chart(document.getElementById("barChart"), barConfig);
 //SETUP
 const doughnutData = {
 	labels: ["Desktop", "Tablet", "Phones"],
+	align: "end",
 	datasets: [
 		{
-			label: "My First Dataset",
 			data: [300, 50, 100],
 			backgroundColor: [
 				"rgb(116, 119, 191)",
 				"rgb(81, 182, 200)",
 				"rgb(129,201,143)",
 			],
-			hoverOffset: 4,
+			hoverOffset: 1,
 		},
 	],
 };
