@@ -79,31 +79,38 @@ var barChart = new Chart(document.getElementById("barChart"), barConfig);
 
 ///////PIE CHART //////////////////////////////////
 
-//SETUP
-const doughnutData = {
-	labels: ["Desktop", "Tablet", "Phones"],
-	align: "end",
+const mobileChart = document.getElementById("doughnutChart");
+
+let doughnutData = {
+	labels: ["Desktop", "Table", "Phones"],
 	datasets: [
 		{
-			data: [300, 50, 100],
+			data: [2000, 550, 500],
+			borderWidth: 0,
 			backgroundColor: [
 				"rgb(116, 119, 191)",
+				"rgb(129,201,143) ",
 				"rgb(81, 182, 200)",
-				"rgb(129,201,143)",
 			],
-			hoverOffset: 1,
 		},
 	],
 };
 
-//CONFIG
-const doughnutConfig = {
-	type: "doughnut",
-	data: doughnutData,
+let doughnutLabels = {
+	responsive: true,
+	aspectRatio: 1.5,
+	plugins: {
+		legend: {
+			position: "right",
+			labels: {
+				boxWidth: 25,
+			},
+		},
+	},
 };
 
-//RENDER
-var doughnutChart = new Chart(
-	document.getElementById("doughnutChart"),
-	doughnutConfig
-);
+var doughnutConfig = new Chart(mobileChart, {
+	type: "doughnut",
+	data: doughnutData,
+	options: doughnutLabels,
+});
