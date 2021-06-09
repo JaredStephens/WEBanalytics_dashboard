@@ -39,18 +39,6 @@ const lineData = {
 const lineConfig = {
 	type: "line",
 	data: lineData,
-	options: {
-		legend: {
-			display: false,
-		},
-		tooltips: {
-			callbacks: {
-				label: function (tooltipItem) {
-					return tooltipItem.yLabel;
-				},
-			},
-		},
-	},
 };
 
 // RENDER
@@ -59,9 +47,11 @@ var lineChart = new Chart(document.getElementById("lineChart"), lineConfig);
 ///////BAR CHART //////////////////////////////////
 
 // SETUP
-const barLabels = ["S", "M", "T", "W", "T", "F", "S"];
+
+const barChart = document.getElementById("barChart");
+
 const barData = {
-	labels: barLabels,
+	labels: ["S", "M", "T", "W", "T", "F", "S"],
 	datasets: [
 		{
 			label: "DAILY TRAFFIC",
@@ -74,20 +64,25 @@ const barData = {
 };
 
 // CONFIG
-const barConfig = {
+const barLabels = {};
+
+//RENDER
+var barConfig = new Chart(barChart, {
 	type: "bar",
 	data: barData,
 	options: {
-		scales: {
-			y: {
-				beginAtZero: true,
+		legend: {
+			display: false,
+		},
+		tooltip: {
+			callbacks: {
+				label: function (tooltipItem) {
+					return tooltipItem.ylabel;
+				},
 			},
 		},
 	},
-};
-
-//RENDER
-var barChart = new Chart(document.getElementById("barChart"), barConfig);
+});
 
 ///////PIE CHART //////////////////////////////////
 
