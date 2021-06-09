@@ -160,12 +160,13 @@ h4 {
 }
 
 canvas {
-	max-width: 100%;
+	margin: 0%;
 }
 
 .chart-div {
-	padding: 1em;
+	padding: 1em 0.5em;
 	border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+	width: 100%;
 }
 
 /* MOBILE RESPONSIVE */
