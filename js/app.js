@@ -20,10 +20,11 @@ function notifi() {
 ///////LINE CHART //////////////////////////////////
 
 // SET-UP
-const lineLabels = ["16-22", "23-19", "30-5", "6-12", "13-19", "20-26"];
+
+const lineChart = document.getElementById("lineChart");
 
 const lineData = {
-	labels: lineLabels,
+	labels: ["16-22", "23-19", "30-5", "6-12", "13-19", "20-26"],
 	datasets: [
 		{
 			label: "TRAFFIC",
@@ -35,14 +36,18 @@ const lineData = {
 	],
 };
 
-// CONFIG
-const lineConfig = {
+// RENDER
+var lineConfig = new Chart(lineChart, {
 	type: "line",
 	data: lineData,
-};
-
-// RENDER
-var lineChart = new Chart(document.getElementById("lineChart"), lineConfig);
+	options: {
+		plugins: {
+			legend: {
+				display: false,
+			},
+		},
+	},
+});
 
 ///////BAR CHART //////////////////////////////////
 
@@ -55,7 +60,7 @@ const barData = {
 	datasets: [
 		{
 			label: "DAILY TRAFFIC",
-			data: [70, 120, 150, 100, 200, 100],
+			data: [70, 120, 150, 100, 200, 100, 212],
 			backgroundColor: "rgb(116, 119, 191)",
 			borderColor: "rgb(116, 119, 191, .3)",
 			borderWidth: 1,
@@ -63,28 +68,22 @@ const barData = {
 	],
 };
 
-// CONFIG
-const barLabels = {};
-
 //RENDER
 var barConfig = new Chart(barChart, {
 	type: "bar",
 	data: barData,
 	options: {
-		legend: {
-			display: false,
-		},
-		tooltip: {
-			callbacks: {
-				label: function (tooltipItem) {
-					return tooltipItem.ylabel;
-				},
+		plugins: {
+			legend: {
+				display: false,
 			},
 		},
 	},
 });
 
 ///////PIE CHART //////////////////////////////////
+
+// SETUP
 
 const mobileChart = document.getElementById("doughnutChart");
 
@@ -115,6 +114,8 @@ let doughnutLabels = {
 		},
 	},
 };
+
+// RENDER
 
 var doughnutConfig = new Chart(mobileChart, {
 	type: "doughnut",
