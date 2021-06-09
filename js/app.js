@@ -39,6 +39,18 @@ const lineData = {
 const lineConfig = {
 	type: "line",
 	data: lineData,
+	options: {
+		legend: {
+			display: false,
+		},
+		tooltips: {
+			callbacks: {
+				label: function (tooltipItem) {
+					return tooltipItem.yLabel;
+				},
+			},
+		},
+	},
 };
 
 // RENDER
@@ -103,7 +115,7 @@ let doughnutLabels = {
 		legend: {
 			position: "right",
 			labels: {
-				boxWidth: 25,
+				boxWidth: 20,
 			},
 		},
 	},
