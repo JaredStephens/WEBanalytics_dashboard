@@ -104,7 +104,7 @@ let doughnutData = {
 
 let doughnutLabels = {
 	responsive: true,
-	aspectRatio: 1.5,
+	aspectRatio: 2,
 	plugins: {
 		legend: {
 			position: "right",
