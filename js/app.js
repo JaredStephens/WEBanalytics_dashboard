@@ -27,10 +27,11 @@ const lineData = {
 	labels: ["16-22", "23-19", "30-5", "6-12", "13-19", "20-26"],
 	datasets: [
 		{
+			lineTension: 0.3,
 			label: "TRAFFIC",
 			backgroundColor: "rgb(116, 119, 191, .3)",
 			borderColor: "rgb(116, 119, 191, .3)",
-			data: [1000, 200, 1000, 400, 1000, 2000],
+			data: [1000, 300, 1000, 400, 1000, 2000],
 			fill: true,
 		},
 	],
