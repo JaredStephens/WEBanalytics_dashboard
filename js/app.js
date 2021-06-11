@@ -29,9 +29,9 @@ const lineData = {
 		{
 			lineTension: 0.3,
 			label: "TRAFFIC",
+			data: [600, 1400, 900, 2200, 2350, 1200],
 			backgroundColor: "rgb(116, 119, 191, .3)",
 			borderColor: "rgb(116, 119, 191, .3)",
-			data: [1000, 300, 1000, 400, 1000, 2000],
 			fill: true,
 		},
 	],
@@ -42,9 +42,15 @@ var lineConfig = new Chart(lineChart, {
 	type: "line",
 	data: lineData,
 	options: {
+		aspectRatio: 3,
 		plugins: {
 			legend: {
 				display: false,
+			},
+		},
+		scales: {
+			y: {
+				beginAtZero: true,
 			},
 		},
 	},
@@ -73,10 +79,16 @@ const barData = {
 var barConfig = new Chart(barChart, {
 	type: "bar",
 	data: barData,
+	aspectRatio: 3,
 	options: {
 		plugins: {
 			legend: {
 				display: false,
+			},
+		},
+		scales: {
+			y: {
+				beginAtZero: true,
 			},
 		},
 	},
@@ -105,7 +117,7 @@ let doughnutData = {
 
 let doughnutLabels = {
 	responsive: true,
-	aspectRatio: 2,
+	aspectRatio: 3,
 	plugins: {
 		legend: {
 			position: "right",
