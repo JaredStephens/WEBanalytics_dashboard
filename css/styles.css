@@ -5,7 +5,10 @@
 	font-family: "Roboto", sans-serif;
 }
 
-/* HEADER */
+/* //////////////////////
+////////HEADER///////
+///////////////////// */
+
 header {
 	display: flex;
 	align-items: center;
@@ -62,7 +65,9 @@ h3 {
 	margin-left: 0%;
 }
 
+/* /////////////////// */
 /* NOTIFICATION STYLES */
+/* //////////////// */
 
 .notification {
 	text-decoration: none;
@@ -84,7 +89,9 @@ h3 {
 	font-size: 0.4em;
 }
 
-/* NAVBAR */
+/* /////////////
+ //////NAVBAR//// 
+////////////// */
 
 nav {
 	background-color: rgb(77, 76, 114);
@@ -104,7 +111,9 @@ a {
 	text-decoration: none;
 }
 
+/* ///////////// */
 /* MAIN STYLES */
+/* ///////////// */
 
 .dash {
 	background-color: #e5e5e5;
@@ -121,7 +130,10 @@ a {
 	justify-content: center;
 }
 
+/* ////////////// */
 /* ALERT BUTTON  */
+/* //////////////// */
+
 #alert {
 	display: flex;
 	justify-content: space-between;
@@ -146,7 +158,10 @@ h4 {
 	color: white;
 }
 
+/* ///////////// */
 /* CHART STYLES */
+/* //////////////// */
+
 .chart-container {
 	max-width: 100%;
 	display: flex;
@@ -170,8 +185,9 @@ canvas {
 	border-bottom: 1px solid rgb(0, 0, 0, 0.3);
 	width: 100%;
 }
-
+/* ////////////// */
 /* WIDGET STYLES */
+/* ///////////// */
 
 #widget-div {
 	display: flex;
@@ -224,6 +240,31 @@ canvas {
 .stat-title {
 	font-size: 20px;
 	font-weight: normal;
+}
+
+/* /////////// */
+/* NEW MEMBERS */
+/* /////////// */
+
+.members-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 0.5em 1em;
+	border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+}
+
+.member-image {
+	width: 60px;
+	border-radius: 50px;
+}
+
+h5 {
+	font-weight: normal;
+}
+
+.members-email {
+	color: rgb(116, 119, 191);
 }
 
 /* MOBILE RESPONSIVE */
