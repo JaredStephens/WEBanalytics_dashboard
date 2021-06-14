@@ -223,6 +223,38 @@
 				</div>
 				</div>
 			</main>
+			<footer>
+				<div class="user-container">
+				<h2 class="stat-title">MESSAGE USER</h2>
+				<form action="#" id="message">
+					<input type="text" name="search" id="search" placeholder="Search for User" required>
+					<textarea name="message" id="message" cols="20" rows="5"  placeholder="Message for User" required></textarea>
+					<button type="submit" id="send">SEND</button>
+				</form>
+			</div>
+			<div class="settings-container">
+				<h2 class="stat-title">SETTINGS</h2>
+				<form action="#">
+					<label class="switch">
+						<input class="switch-input" type="checkbox" /> 
+						<span class="switch-label" data-on="On" data-off="Off"></span> 
+						<span class="switch-handle"></span> 
+					</label>
+					<label class="switch">
+						<input class="switch-input" type="checkbox" />
+						<span class="switch-label" data-on="On" data-off="Off"></span> 
+						<span class="switch-handle"></span> 
+					</label>
+
+						<select name="time" id="time">
+							<option value="EST">EST</option>
+							<option value="CST">CST</option>
+							<option value="MST">MST</option>
+							<option value="AST">AST</option>
+						</select>
+				</form>
+			</div>
+			</footer>
 		</div>
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"
