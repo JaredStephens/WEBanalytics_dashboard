@@ -79,7 +79,7 @@ const barData = {
 var barConfig = new Chart(barChart, {
 	type: "bar",
 	data: barData,
-	aspectRatio: 3,
+	aspectRatio: 2.5,
 	options: {
 		plugins: {
 			legend: {
@@ -117,7 +117,7 @@ let doughnutData = {
 
 let doughnutLabels = {
 	responsive: true,
-	aspectRatio: 3,
+	aspectRatio: 2,
 	plugins: {
 		legend: {
 			position: "right",
