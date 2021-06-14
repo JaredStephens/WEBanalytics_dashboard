@@ -246,25 +246,53 @@ canvas {
 /* NEW MEMBERS */
 /* /////////// */
 
-.members-container {
+.members-container,
+.members-container2 {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	text-align: center;
 	margin: 0.5em 1em;
 	border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+}
+
+#last {
+	border-bottom: none;
 }
 
 .member-image {
 	width: 60px;
 	border-radius: 50px;
+	margin-bottom: 0.2em;
+}
+
+.stat-title {
+	display: flex;
+	align-items: left;
+	padding-left: 1em;
+	padding-top: 0.5em;
+	border-top: 1px solid rgb(0, 0, 0, 0.3);
 }
 
 h5 {
 	font-weight: normal;
 }
+.member-date,
+.member-hour {
+	padding-bottom: 1em;
+}
 
 .members-email {
 	color: rgb(116, 119, 191);
+}
+
+.recent-container {
+	border: none;
+}
+
+.fa-color {
+	color: rgb(116, 119, 191);
+	display: none;
 }
 
 /* MOBILE RESPONSIVE */
@@ -381,6 +409,61 @@ h5 {
 	.widget {
 		width: 200px;
 	}
+
+	/* /////////// */
+	/* NEW MEMBERS 768 */
+	/* /////////// */
+
+	.members-container,
+	.members-container2 {
+		padding: 0.5em 0%;
+		display: grid;
+		grid-template-columns: 11% 1fr 10%;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas:
+			"img line1 ."
+			"img  line2 date ";
+	}
+
+	#last {
+		border-bottom: none;
+	}
+
+	.member-image {
+		width: 60px;
+		border-radius: 50px;
+		margin-bottom: 0.2em;
+		grid-area: img;
+	}
+
+	.member-name,
+	.members-comment {
+		grid-area: line1;
+		align-self: end;
+	}
+
+	.member-hour,
+	.members-email {
+		grid-area: line2;
+		align-self: start;
+	}
+
+	.member-name,
+	.members-email,
+	.members-comment,
+	.member-hour {
+		display: flex;
+		align-items: left;
+	}
+
+	.member-date,
+	.fa-color {
+		grid-area: date;
+	}
+	.fa-color {
+		color: rgb(116, 119, 191);
+		display: inline;
+	}
 }
 
 @media (min-width: 1024px) {
@@ -412,6 +495,32 @@ h5 {
 	}
 
 	.widget {
-		width: 288px;
+		width: 280px;
+	}
+
+	.members-container,
+	.members-container2 {
+		padding: 0.5em 0%;
+		display: grid;
+		grid-template-columns: 16% 1fr 10%;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas:
+			"img line1 ."
+			"img  line2 date ";
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "left right";
+	}
+
+	.left {
+		grid-area: left;
+		border-right: 1px solid rgb(0, 0, 0, 0.3);
+	}
+
+	.right {
+		grid-area: right;
 	}
 }
