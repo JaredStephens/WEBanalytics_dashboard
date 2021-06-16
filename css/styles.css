@@ -72,7 +72,7 @@ h3 {
 .notification {
 	text-decoration: none;
 	display: inline-block;
-	padding: 5% 0%;
+	padding: auto;
 }
 
 #bellIcon:hover {
@@ -162,7 +162,7 @@ h4 {
 /* CHART STYLES */
 /* //////////////// */
 
-.chart-container {
+#chart-container {
 	max-width: 100%;
 	display: flex;
 	align-items: center;
@@ -196,7 +196,7 @@ canvas {
 	flex-wrap: wrap;
 }
 
-.widget-title {
+#widget-title {
 	font-size: 20px;
 	font-weight: lighter;
 	padding: 0.5em 0.5em;
@@ -445,8 +445,8 @@ input:checked + .slider:before {
 	.grid-container {
 		height: 100vh;
 		display: grid;
-		grid-template-columns: 8vh 1fr;
-		grid-template-rows: 10% 1fr;
+		grid-template-columns: 9vh 1fr;
+		grid-template-rows: 7vh 1fr;
 	}
 	.header {
 		grid-column: 1/3;
@@ -459,6 +459,7 @@ input:checked + .slider:before {
 		background-color: rgb(116, 119, 191);
 		padding: 1em 0%;
 	}
+
 	/* HEADER 768PX DISPLAY */
 	h1 {
 		font-size: 25px;
@@ -521,7 +522,7 @@ input:checked + .slider:before {
 	}
 
 	/* CHART 768 */
-	.chart-container {
+	#chart-container {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;

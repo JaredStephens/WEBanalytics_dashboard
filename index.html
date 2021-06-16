@@ -41,13 +41,13 @@
 				<a href="#"
 					><img src="./svgs/home.svg" alt="home" class="nav-icons"
 				/></a>
-				<a href="#"
+				<a href="#chart-container"
 					><img src="./svgs/bar-chart.svg" alt="home" class="nav-icons"
 				/></a>
-				<a href="#"
+				<a href="#widget-title"
 					><img src="./svgs/members.svg" alt="home" class="nav-icons"
 				/></a>
-				<a href="#"
+				<a href="#settings-title"
 					><img src="./svgs/settings.svg" alt="home" class="nav-icons"
 				/></a>
 			</nav>
@@ -61,7 +61,7 @@
 						<i class="fas fa-times" id="x"></i>
 					</button>
 				</div>
-				<div class="chart-container">
+				<div id="chart-container">
 					<div class="chart-div" id="line">
 						<h2 class="chart-title">TRAFFIC</h2>
 						<canvas id="lineChart"></canvas>
@@ -75,7 +75,7 @@
 						<canvas id="doughnutChart"></canvas>
 					</div>
 				</div>
-				<h2 class="widget-title">SOCIAL STATS</h2>
+				<h2 id="widget-title">SOCIAL STATS</h2>
 				<div id="widget-div">
 					<div class="widget">
 						<svg
@@ -242,7 +242,7 @@
 						</form>
 					</div>
 					<div class="settings-container">
-						<h2 class="stat-title">SETTINGS</h2>
+						<h2 class="stat-title" id="settings-title">SETTINGS</h2>
 						<form action="#" class="toggle-form">
 							<label class="toggle-container">
 								Send Email Notifications
