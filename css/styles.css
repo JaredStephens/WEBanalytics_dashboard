@@ -676,4 +676,21 @@ input:checked + .slider:before {
 	.right {
 		grid-area: right;
 	}
+
+	/* /////////////////
+	////SETTINGS//////
+	///////////////// */
+
+	.user-container {
+		border-right: 1px solid rgb(0, 0, 0, 0.3);
+	}
+
+	.toggle-container {
+		padding-right: 30%;
+	}
+
+	#timezone {
+		margin-top: 1.5em;
+		margin-bottom: 0%;
+	}
 }
