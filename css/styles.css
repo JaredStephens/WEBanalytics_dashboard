@@ -241,7 +241,6 @@ canvas {
 	font-size: 20px;
 	font-weight: normal;
 	display: flex;
-	align-items: left;
 	padding-left: 1em;
 	padding-top: 0.5em;
 	border-top: 1px solid rgb(0, 0, 0, 0.3);
@@ -261,14 +260,15 @@ canvas {
 	border-bottom: 1px solid rgb(0, 0, 0, 0.3);
 }
 
-#last {
-	border-bottom: none;
-}
-
 .member-image {
 	width: 60px;
 	border-radius: 50px;
 	margin-bottom: 0.2em;
+}
+
+#last,
+#last2 {
+	border-bottom: none;
 }
 
 h5 {
@@ -570,10 +570,6 @@ input:checked + .slider:before {
 			"img  line2 date ";
 	}
 
-	#last {
-		border-bottom: none;
-	}
-
 	.member-image {
 		width: 60px;
 		border-radius: 50px;
@@ -598,7 +594,6 @@ input:checked + .slider:before {
 	.members-comment,
 	.member-hour {
 		display: flex;
-		align-items: left;
 	}
 
 	.member-date,
