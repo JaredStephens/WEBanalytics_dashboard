@@ -439,6 +439,8 @@ input:checked + .slider:before {
 }
 
 /* MOBILE RESPONSIVE */
+/* //////////////////// */
+
 @media (min-width: 768px) {
 	.grid-container {
 		height: 100vh;
@@ -550,7 +552,7 @@ input:checked + .slider:before {
 	}
 
 	.widget {
-		width: 200px;
+		width: 180px;
 	}
 
 	/* /////////// */
@@ -606,6 +608,14 @@ input:checked + .slider:before {
 	.fa-color {
 		color: rgb(116, 119, 191);
 		display: inline;
+	}
+
+	/* /////////////////
+	////SETTINGS//////
+	///////////////// */
+
+	.toggle-container {
+		padding-right: 50%;
 	}
 }
 

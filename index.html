@@ -125,50 +125,50 @@
 				</div>
 				<div class="container">
 					<div class="left">
-					<h2 class="stat-title">NEW MEMBERS</h2>
-					<div class="members-container">
-						<img
-							src="./images/member-1.jpg"
-							alt="profile image"
-							class="member-image"
-						/>
-						<h5 class="member-name">Victoria Chambers</h5>
-						<h5 class="members-email">victoria.chambers80@example.com</h5>
-						<h5 class="member-date">10/15/20</h5>
+						<h2 class="stat-title">NEW MEMBERS</h2>
+						<div class="members-container">
+							<img
+								src="./images/member-1.jpg"
+								alt="profile image"
+								class="member-image"
+							/>
+							<h5 class="member-name">Victoria Chambers</h5>
+							<h5 class="members-email">victoria.chambers80@example.com</h5>
+							<h5 class="member-date">10/15/20</h5>
+						</div>
+						<div class="members-container">
+							<img
+								src="./images/member-2.jpg"
+								alt="profile image"
+								class="member-image"
+							/>
+							<h5 class="member-name">Dale Bryd</h5>
+							<h5 class="members-email">dale.byrd52@example.com</h5>
+							<h5 class="member-date">10/15/20</h5>
+						</div>
+						<div class="members-container">
+							<img
+								src="./images/member-3.jpg"
+								alt="profile image"
+								class="member-image"
+							/>
+							<h5 class="member-name">Dawn Wood</h5>
+							<h5 class="members-email">dawn.wood16@example.com</h5>
+							<h5 class="member-date">10/15/20</h5>
+						</div>
+						<div class="members-container" id="last">
+							<img
+								src="./images/member-4.jpg"
+								alt="profile image"
+								class="member-image"
+							/>
+							<h5 class="member-name">Dan Oliver</h5>
+							<h5 class="members-email">dan.oliver82@example.com</h5>
+							<h5 class="member-date">10/15/20</h5>
+						</div>
 					</div>
-					<div class="members-container">
-						<img
-							src="./images/member-2.jpg"
-							alt="profile image"
-							class="member-image"
-						/>
-						<h5 class="member-name">Dale Bryd</h5>
-						<h5 class="members-email">dale.byrd52@example.com</h5>
-						<h5 class="member-date">10/15/20</h5>
-					</div>
-					<div class="members-container">
-						<img
-							src="./images/member-3.jpg"
-							alt="profile image"
-							class="member-image"
-						/>
-						<h5 class="member-name">Dawn Wood</h5>
-						<h5 class="members-email">dawn.wood16@example.com</h5>
-						<h5 class="member-date">10/15/20</h5>
-					</div>
-					<div class="members-container" id="last">
-						<img
-							src="./images/member-4.jpg"
-							alt="profile image"
-							class="member-image"
-						/>
-						<h5 class="member-name">Dan Oliver</h5>
-						<h5 class="members-email">dan.oliver82@example.com</h5>
-						<h5 class="member-date">10/15/20</h5>
-					</div>
-				</div>
-				<div class="right">
-					<h2 class="stat-title">RECENT ACTIVITY</h2>
+					<div class="right">
+						<h2 class="stat-title">RECENT ACTIVITY</h2>
 						<!-- RECENT ACTIVITY -->
 
 						<div class="members-container2">
@@ -221,49 +221,61 @@
 						</div>
 					</div>
 				</div>
+				<div class="user-container">
+					<h2 class="stat-title">MESSAGE USER</h2>
+					<form action="#" id="message">
+						<input
+							type="text"
+							name="search"
+							id="search"
+							placeholder="Search for User"
+							required
+						/>
+						<textarea
+							name="message"
+							id="message"
+							cols="20"
+							rows="5"
+							placeholder="Message for User"
+							required
+						></textarea>
+						<button type="submit" id="send">SEND</button>
+					</form>
+				</div>
+				<div class="settings-container">
+					<h2 class="stat-title">SETTINGS</h2>
+					<form action="#" class="toggle-form">
+						<label class="toggle-container">
+							Send Email Notifications
+							<label class="switch">
+								<input type="checkbox" />
+								<span class="slider round"></span>
+							</label>
+						</label>
+						<br />
+						<label class="toggle-container">
+							Set Profile to Public
+							<label class="switch">
+								<input type="checkbox" />
+								<span class="slider round"></span>
+							</label>
+						</label>
+						<select name="timezone" id="timezone" required>
+							<option selected="selected" disabled hidden>
+								Select Timezone
+							</option>
+							<option value="EST">EST</option>
+							<option value="AST">AST</option>
+							<option value="CST">CST</option>
+							<option value="PST">PST</option>
+						</select>
+						<div id="setting-button">
+							<button class="savebtn">SAVE</button>
+							<button class="cancelbtn">CANCEL</button>
+						</div>
+					</form>
 				</div>
 			</main>
-			<footer>
-				<div class="user-container">
-				<h2 class="stat-title">MESSAGE USER</h2>
-				<form action="#" id="message">
-					<input type="text" name="search" id="search" placeholder="Search for User" required>
-					<textarea name="message" id="message" cols="20" rows="5"  placeholder="Message for User" required></textarea>
-					<button type="submit" id="send">SEND</button>
-				</form>
-			</div>
-			<div class="settings-container">
-				<h2 class="stat-title">SETTINGS</h2>
-				<form action="#" class="toggle-form">
-					<label class="toggle-container">
-						Send Email Notifications
-					<label class="switch">
-						<input type="checkbox">
-						<span class="slider round"></span>
-					  </label>
-					</label>
-					<br>
-					<label class="toggle-container">
-						Set Profile to Public
-					<label class="switch">
-						<input type="checkbox">
-						<span class="slider round"></span>
-					  </label>
-					</label>
-					<select name="timezone" id="timezone" required>
-					  <option selected="selected" disabled hidden>Select Timezone</option>
-					  <option value="EST">EST</option>
-					  <option value="AST">AST</option>
-					  <option value="CST">CST</option>
-					  <option value="PST">PST</option>
-					</select> 
-					<div id="setting-button">
-						<button class="savebtn">SAVE</button>
-						<button class="cancelbtn">CANCEL</button>
-					</div>
-				</form>
-			</div>
-			</footer>
 		</div>
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"
