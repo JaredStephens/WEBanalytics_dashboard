@@ -135,3 +135,27 @@ var doughnutConfig = new Chart(mobileChart, {
 	data: doughnutData,
 	options: doughnutLabels,
 });
+
+////////////////////////
+///MESSAGE VALIDATION///
+////////////////////////
+
+const user = document.getElementById("search");
+const msg = document.getElementById("textarea");
+const form = document.getElementById("message");
+
+form.addEventListener("submit", (e) => {
+	let messages = [];
+	if (user.value === "" || null) {
+		window.alert("Fill out 'Search for User' field");
+		e.preventDefault();
+	} else {
+		if (msg.value === "" || null) {
+			window.alert("Fill out 'Message for User' field");
+			e.preventDefault();
+		} else {
+			window.alert("Message Submitted");
+			form.reset();
+		}
+	}
+});

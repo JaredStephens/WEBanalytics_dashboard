@@ -38,7 +38,7 @@
 				<h3>Student Name</h3>
 			</header>
 			<nav class="nav">
-				<a href="#"
+				<a href="#dashboard"
 					><img src="./svgs/home.svg" alt="home" class="nav-icons"
 				/></a>
 				<a href="#chart-container"
@@ -53,7 +53,7 @@
 			</nav>
 			<main>
 				<div class="dash">
-					<h2 class="dashboard">Dashboard</h2>
+					<h2 id="dashboard">Dashboard</h2>
 				</div>
 				<div id="alert">
 					<h4>Alert: You have unread messages</h4>
@@ -222,13 +222,12 @@
 					</div>
 					<div class="user-container">
 						<h2 class="stat-title">MESSAGE USER</h2>
-						<form action="#" id="message">
+						<form action="#" id="message" name="message">
 							<input
 								type="text"
 								name="search"
 								id="search"
 								placeholder="Search for User"
-								required
 							/>
 							<textarea
 								name="message"
@@ -236,7 +235,6 @@
 								cols="20"
 								rows="5"
 								placeholder="Message for User"
-								required
 							></textarea>
 							<button type="submit" id="send">SEND</button>
 						</form>

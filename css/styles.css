@@ -118,7 +118,7 @@ a {
 .dash {
 	background-color: #e5e5e5;
 }
-.dashboard {
+#dashboard {
 	font-weight: normal;
 	background: white;
 	font-size: 20px;
@@ -517,7 +517,7 @@ input:checked + .slider:before {
 		padding-bottom: 55%;
 	}
 
-	.dashboard {
+	#dashboard {
 		width: 20%;
 	}
 
@@ -632,7 +632,7 @@ input:checked + .slider:before {
 		margin-right: 0.5em;
 	}
 
-	.dashboard {
+	#dashboard {
 		width: 15%;
 	}
 
