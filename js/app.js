@@ -145,7 +145,6 @@ const msg = document.getElementById("textarea");
 const form = document.getElementById("message");
 
 form.addEventListener("submit", (e) => {
-	let messages = [];
 	if (user.value === "" || null) {
 		window.alert("Fill out 'Search for User' field");
 		e.preventDefault();
